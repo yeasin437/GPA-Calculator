@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GPA Calculator</h1>
+
+      <div id="warning" class="warning hidden">
+        Please fill in all grades and credits for selected courses!
+      </div>
+
+      <table id="gpaTable">
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="selectAll" /></th>
+            <th>Course</th>
+            <th>Grade</th>
+            <th>Credits</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Dynamic rows will be added here -->
+        </tbody>
+      </table>
+
+      <button id="addRow">Add Row ➕</button>
+      <button id="calculate">
+        Calculate <span class="bold-equals">=</span>
+      </button>
+      <button id="reset">Reset 🔄</button>
+
+      <div id="gpaResult">GPA: <span id="gpaValue">0.00</span></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
